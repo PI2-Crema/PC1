@@ -50,7 +50,9 @@ O monitoramento do ph, temperatura e nível de oxigenação da água a longo pra
 
 \section{Pesquisa de Mercado}
 
-\textbf{FALTA FAZER}
+No mercado existe uma quantidade considerável de alimentadores automáticos porém poucas são as soluções que apresentam a característica flutuante. A grande maioria são para estruturas para apoio terrestre e com uma baixa capacidade para a quantidade de ração. Uma solução flutuante para tanques de rede encontrada é a criada pela empresa Marcsystem. Se trata de um alimentador para peixes com capacidade nominal para 60 kg de ração e tem sua estrutura em plástico numa dosagem de até 1kg em 7s\cite{Marcsystem}. Porém o custo do produto não está especificado e o grupo não teve resposta do fabricante até o momento. Comparado com outras opções da própria empresa temos um tratador automático para cães com uma capacidade de 25kg, tendo o custo de R\$ 890,00 e não conta com  uma estrutura flutuante. Vale ressaltar que uma estrutura flutuante deve contar com materiais mais resistentes e leve, o que encarece o projeto.
+Essa foi a única solução que se encaixa na especificidade flutuante e de alimentação de peixes do projeto. E ainda assim não tem a autonomia de 300 kg de ração especificada pelo cliente. Podemos então verificar que o projeto ocupa uma lacuna no mercado nacional, tratadores com grande autonomia para alimentação de peixes em lagos.
+
 
 Produtos presentes no mercado, acessibilidade qualidade, referências nacionais e internacionais
 
@@ -58,10 +60,71 @@ Produtos presentes no mercado, acessibilidade qualidade, referências nacionais 
 A proposta do grupo é pesquisar e projetar o sistema de alimentação automatizado, o qual atenda os requisitos mínimos impostos pelo cliente e apresentar a melhor escolha em relação ao custo benefício a médio e longo prazo.
 
 \section{Objetivo Específico}
-\textbf{FALTA FAZER}
+
+\begin{itemize}
+  \item Despejar quantia específica de ração em períodos pré-determinados;
+  \item Medir parâmetros da água em que os tanques se encontram relevantes à piscicultura;
+  \item Conectar os tanques a uma central através de uma rede sem fio;
+  \item Disponibilizar os dados das medições através de uma aplicação web;
+  \item Carregar os baterias com o uso de painéis fotovoltaicos;
+\end{itemize}
+
 \section{Equipe e Responsabilidades}
-\textbf{FALTA FAZER}
+
+A equipe resposável pelo desenvolvimento do projeto está distribuida de acordo com a Tabela \ref{equipe}. Sendo formada por 12 integrantes (estudantes das cinco engenharias da UNB Gama).
+
+\begin{table}[H]
+\centering
+\caption{Equipe do projeto Crema}
+\label{equipe}
+\begin{tabular}{|l|l|l|}
+\hline
+Nome                           & Matrícula  & Curso              \\ \hline
+Barbara Helen da Silva         & 13/0103241 & Eng. de Energia    \\ \hline
+Emilly Caroline Costa Silva    & 13/0008524 & Eng. de Energia    \\ \hline
+Fabiana Campos Ribeiro         & 10/0100040 & Eng. de Energia    \\ \hline
+Daniel Borges Pinheiro         & 12/0114283 & Eng. de Eletrônica \\ \hline
+Filipe Batista Ribeiro Costa   & 12/0117673 & Eng. de Eletrônica \\ \hline
+Teles Mauricio Presa Raulinho  & 12/0042274 & Eng. de Eletrônica \\ \hline
+Eliseu Egewarth                & 12/0029693 & Eng. de Software   \\ \hline
+Gabriel de Araújo Silva        & 12/0118220 & Eng. de Software   \\ \hline
+Luis Filipe Resende Vilela     & 12/0036754 & Eng. de Software   \\ \hline
+Rafael Alarcão Uchôa Tenorio   & 13/0035912 & Eng. Automotiva    \\ \hline
+Tulio Costa Oliveira           & 12/0062208 & Eng. Automotiva    \\ \hline
+Luis Fernando Marzola de Cunha & 12/0017156 & Eng. Aeroespacial  \\ \hline
+\end{tabular}
+\end{table}
+
+É importante, como equipe, que todos os integrantes estejam a par do que está acontencendo no projeto e quais são os próximos passos e em caso de dúvida à quem recorrer. Dessa forma foi definido que a metodologia SCRUM será utilizada e que em cada sprint o papel de SCRUM MASTER passará para outro estudante. Dessa forma não há uma sobre cargar em um único integrante.
+
+A equipe também definiu um resposável por cada área de atuação do projeto. Este, por sua vez, é responsável por fazer com que a equipe resposável pelo módulo trabalhe em conjunto. A distribuição de de responsábilidades está de acordo com a tabela \ref{atuacao}.
+
+% Please add the following required packages to your document preamble:
+\begin{table}[H]
+\centering
+\caption{Equipe - Áreas de atuação}
+\label{atuacao}
+\begin{tabular}{|c|l|}
+\hline
+\multirow{3}{*}{Eletrônica}                                            & \multicolumn{1}{c|}{Sensoriamento}                                                    \\ \cline{2-2}
+                                                                       & Atuadores                                                                             \\ \cline{2-2}
+                                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{Comunicação}}                                     \\ \cline{1-1}
+\multirow{2}{*}{Software}                                              & \multicolumn{1}{c|}{}                                                                 \\ \cline{2-2}
+                                                                       & \begin{tabular}[c]{@{}l@{}}Interface de\\ Controle e análise \\ de dados\end{tabular} \\ \hline
+Energia                                                                & Alimentação                                                                         \\ \hline
+\begin{tabular}[c]{@{}c@{}}Automotiva \\ e\\ Aeroespacial\end{tabular} & Estrutura                                                                             \\ \hline
+\end{tabular}
+\end{table}
+
 \section{Política e Comunicação da Equipe}
-\textbf{FALTA FAZER}
+
+Para facilitar a organização e a comunicação interna do grupo, foram selecionas algumas ferramentas gratuitas. Para a comunicação foi selecionado o aplicativo de mensagem instantanea Whatsapp.
+Para o desenvolvimento de documentação e a distribuição de documentos e ou recursos foi selecionado a ferramente Google Drive que permite o compartilhamento online à um único \textit{hub} de documentos.
+
+Uma vez que o metodologia de gerênciamento SCRUM foi seleciona a ferramenta trello será utilizada como o KANBAN da equipe.
+
+A técnica de \textit{daily meeting} serão realizadas de forma virtual através da ferramenta de chat Whatsapp. Todos deram response ao final do dia as seguintes perguntas: \textit{o que foi feito hoje?, o que será feito amanhã? e o que está me bloqueando?}.
+
 \section{Organização do Trabalho}
-\textbf{FALTA FAZER}
+
+Este documento está organizado para apresentar, primeiramente, uma visão geral dos requisitos e as limitações defindas. Em seguida uma visão geral da solução proposta, passando, de formar superficial, os módulos da solução. Após isso serão detalhados cada módulo, o que são, quais materiais e como serão utilizados. Os módulos da solução são: módulo de energia(responsável por fornecer energia elétrica), módulo de controle e comunicação (resposável por controlar o funcionamento do produto e disponibilizar uma interface de comunicação com o usuário), módulos de estrutura (responsável por definir a forma e materiais utilizados pela solução).

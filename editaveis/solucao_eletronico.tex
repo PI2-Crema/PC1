@@ -52,7 +52,7 @@ O módulo HC-SR04 é um dispositivo composto por um transmissor ultrassônico, s
 
 Para fazer a medição do peso da ração no segundo reservatório, com o intuito de controlar o quanto está sendo despejado de uma forma mais precisa, será utilizada uma célula de carga que suporta até 50kg. Quando a meia-ponte desta célula é esticada um sinal elétrico é enviado por um fio, este sinal analógico será tratado pelo módulo Hx711, um circuito de instrumentação que o converterá em um sinal digital de 24 bits, e enviado por uma interface I2C para o microcontrolador. As principais especificações dos dois componentes são:
 
-Célula de Carga [12]:
+Célula de Carga \cite{mercado}:
 \begin{itemize}
 \item Capacidade de peso de cada cédula: Até 50kg
 \item Potência nominal: 1,0 \underline{+} 0,1 mW
@@ -69,7 +69,7 @@ Célula de Carga [12]:
 \item Peso: 25g
 \end{itemize}
 
-Hx711 [13]:
+Hx711 \cite{mercado1}:
 \begin{itemize}
 \item 4,8V ~ 5,5V
 \item Corrente de trabalho: 1,6mA
@@ -88,7 +88,7 @@ Hx711 [13]:
  \label{sensor_ph}
 \end{figure}
 
-O sensor de pH a ser usado é composto por um eletrodo de pH e um circuito de condicionamento de sinal analógico, os dois são unidos através de um conector BNC, o sinal fornecido ao final é analógico e deve ser conectado ao microcontrolador através de sua entrada analógica para posterior conversão ADC a ser realizada pelo microcontrolador. Especificações [14]:
+O sensor de pH a ser usado é composto por um eletrodo de pH e um circuito de condicionamento de sinal analógico, os dois são unidos através de um conector BNC, o sinal fornecido ao final é analógico e deve ser conectado ao microcontrolador através de sua entrada analógica para posterior conversão ADC a ser realizada pelo microcontrolador. Especificações \cite{mercado2}:
 \begin{itemize}
 \item Tensão: 5 \underline{+} 0.2 V
 \item Corrente de trabalho: 5-10mA
@@ -163,7 +163,7 @@ A equação \ref{divTensao} é usada para verificar quais serão os resistores q
 \label{divTensao}
 	V_{out}=V_{in}\frac{R_{2}}{R_{1}+R{2}}
 \end{equation}
-Onde $V_{in}$ é o nível máximo de tensão da bateria e $V_{out}$ o nível máximo que pode ser colocado na porta ADC [15]. É necessário também considerar a corrente máxima que o microcontrolador pode conduzir em sua porta GND, isto estabelece um valor mínimo para os resistores, sendo assim, de acordo com a lei de Ohm, e levando em consideração que a impedância de entrada da porta ADC é alta, a soma destes resistores é descrita na equação \ref{leiOhm}.
+Onde $V_{in}$ é o nível máximo de tensão da bateria e $V_{out}$ o nível máximo que pode ser colocado na porta ADC \cite{EVERDEEN}. É necessário também considerar a corrente máxima que o microcontrolador pode conduzir em sua porta GND, isto estabelece um valor mínimo para os resistores, sendo assim, de acordo com a lei de Ohm, e levando em consideração que a impedância de entrada da porta ADC é alta, a soma destes resistores é descrita na equação \ref{leiOhm}.
 \begin{equation}
 \label{leiOhm}
 	R_{1}+R_{2}=\frac{V_{in}}{I}
@@ -185,7 +185,7 @@ A comunicação entre o dispositivo central, localizado em terra, e os dispositi
  \label{nRF24}
 \end{figure}
 
-Este módulo contém um chip transceptor de 2,4 GHz para uso em aplicações wireless de baixo consumo de potência, ele é configurado pelo microcontrolador ao qual ele está acoplado através de um protocolo Serial Peripheral Interface (SPI). O transceptor pode ser  configurado através de registradores acessados por SPI. Algumas características importantes deste módulo em conjunto com a antena são [4]:
+Este módulo contém um chip transceptor de 2,4 GHz para uso em aplicações wireless de baixo consumo de potência, ele é configurado pelo microcontrolador ao qual ele está acoplado através de um protocolo Serial Peripheral Interface (SPI). O transceptor pode ser  configurado através de registradores acessados por SPI. Algumas características importantes deste módulo em conjunto com a antena são \cite{mercado3}:
 \begin{itemize}
 \item Tensão: 3.3V-3.6V (recomendado 3.3V)
 \item Potência máxima de saída: 20 dBm

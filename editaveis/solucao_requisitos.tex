@@ -4,18 +4,51 @@ A proposta de solução deste trabalho é um produto interdisciplinar na união 
 A organização da apresentação da solução está baseada em sub-sistemas que integrados resultarão na solução como um todo.
 
 \section{Requisistos do Sistema}
-\textbf{FALTA FAZER}
-Lista de requisitos de projeto: tanto do cliente quanto dos projetistas
+
+Está sessnao lista os requisitos de projeto, tanto do cliente quanto dos projetistas.
+
 \subsection{Requisitos Eletrônicos}
-\textbf{FALTA FAZER}
+
+\begin{itemize}
+  \item O sistema deve ser capaz de avaliar o nível de bateria que alimentam os dispositivos de cada tanque;
+ \item Características da água como a temperatura, o pH, a condutividade, a turbidez e o O2 dissolvidos devem ser avaliados pelos sensores presentes no tanque;
+\item Devem ser avaliados o nível de ração no primeiro reservatório e a quantidade de ração no segundo reservatório;
+\item O microcontrolador deve ser responsável por acionar os motores presentes nos tanques de acordo com a taxa temporal e períodos necessários para cada um;
+\item Devem ser comportados até 30 tanques dentro da rede sem fio;
+\item As informações sobre taxas de tempo e quantidade de ração a ser despejada devem ser enviadas da base para os dispositivos nos tanques;
+\item As informações dos sensores presentes nos tanques devem ser enviadas para a base pela rede sem fio quando solicitadas por elas.
+\end{itemize}
+
 \subsection{Requisitos Estruturais}
-\textbf{FALTA FAZER}
+
+O requisitos estruturais são relacionados ao volume, massa e disposição dos elementos na estrutura, além de suas funcionalidades:
+
+\begin{itemize}
+  \item Armazenar 300kg de ração;
+  \item Gerar sustentação hidroestática para toda a massa do sistema estimada em 400kg, além das carga eventual do tratador e saco de ração no momento do reabastecimento;
+  \item Minimizar efeitos térmicos da alta incidência solar da área de atuação do sistemam para preservar a qualidade da ração;
+  \item Transportar a ração do Armazenador para os tanques rede;
+  \item Possuir a maior estabilidade possível em relação ao tratador nos momentos de reabastecimento e em rajadas de vento média da região;
+  \item Abrigar os subsistemas embarcados;
+  \item Isolar a ração e os subsistemas embarcados da umidade;
+\end{itemize}
+
 \subsection{Requisitos Energéticos}
-\textbf{FALTA FAZER}
-\subsection{Requisitos de Locomoção}
-\textbf{FALTA FAZER}
-\subsection{Requisitos de Software}
-\textbf{FALTA FAZER}
+\begin{itemize}
+  \item O local deve ter insolação suficiente para que a placa fotovoltaica seja capaz de fornecer energia ao sistema.
+\item A bateria deve armazenar energia elétrica para ser capaz de alimentar todo o sistema mesmo quando não houver sol.
+\item O motor deve possuir potência suficiente para fazer o fuso girar e levar ração até o reservatório inferior.
+\item A ração deve ser arrastada pelo fuso e cair diretamente no reservatório inferior, não se dispersando.
+\end{itemize}
+\subsection{Requisitos do sistema de controle}
+O requisitos sistema de controle são relacionados à interface do usuário e parametros de configuração
+
+\begin{itemize}
+  \item O sistema deve ser capaz de modificar a configuração do sistema embarcado do alimentador
+  \item O sistema deve gerenciar níveis de acesso, ou seja, alguns usuário não teram acesso a todas as funcionalidades
+  \item O sistema deve ser de fácil utilização e interpretação uma vez que o conhecimento técnico do usuários é baixo
+  \item O sistem deve funcionar de forma local uma vez que o ambiente de produção não possui acesso de internet confiavel, ou seja, pode não haver acesso à internet
+\end{itemize}
 
 \section{Limitações}
 Está sessão aborda as limitações do projeto, isto é, o que o a solução não resolverá ou não poderá desenvolver
@@ -33,8 +66,9 @@ Componentes como o transportador de alimentos só terá sua efetividade comprova
 
 Na parte de isolamento térmico não foi encontrados dados técnicos sobre o produto, apenas dados comerciais, dificultando assim uma comparação mais precisa de soluções possíveis.
 
-\subsection{Limitações Energéticas}
 \subsection{Limitações de Software}
+
+Uma vez que o ambiende de produção do projeto como um todo é de dificil acesso à conexão de internet, o projeto tem como principal objetivo o funcionamento do sistema e controle de forma local. Após o funcionamento de forma local há a intenção de se trabalhar um forma de sincronização online. Porém este ultimo não faz parte do escopo principal.
 
 \section{Visão geral da solução}
 
